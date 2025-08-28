@@ -1,0 +1,44 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // Editor config
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+    "files.eol": "\n",
+    // Auto convert ~ to src
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+
+    // Prettier config
+    "prettier.tabWidth": 4,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.fixAll.eslint": "explicit",
+        "source.fixAll.stylelint": "explicit"
+    },
+    "prettier.enable": true,
+    "scss.validate": false,
+    "css.validate": false,
+    "less.validate": false,
+
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "typescript.format.insertSpaceAfterCommaDelimiter": true,
+    "prettier.singleAttributePerLine": true,
+    "prettier.useTabs": true,
+    "workbench.externalBrowser": "edge",
+    "workbench.editor.enablePreview": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "notebook.defaultFormatter": "esbenp.prettier-vscode"
+}
