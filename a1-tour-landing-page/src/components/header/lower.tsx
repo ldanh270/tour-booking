@@ -1,3 +1,4 @@
+import ForwardArrow from '@/components/common/forward-arrow'
 import { NavToggle } from '@/components/common/nav-toggle'
 import Logo from '@/components/header/logo'
 import { Button } from '@/components/ui/button'
@@ -90,13 +91,7 @@ export default function Lower() {
                     className="rounded-full bg-primary-foreground cursor-pointer"
                 >
                     <span className="text-background">Request A Quote</span>
-                    <Image
-                        src="/forward-arrow.svg"
-                        alt="Forward arrow"
-                        width={24}
-                        height={24}
-                        className="fill-background"
-                    />
+                    <ForwardArrow />
                 </Button>
             </div>
         </section>

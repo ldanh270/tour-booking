@@ -1,7 +1,7 @@
-import Header from '@/components/layout/header'
+import Header from '@/layout/core/header'
 
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono, Inter, Manrope, Montez } from 'next/font/google'
+import { Inter, Manrope, Montez } from 'next/font/google'
 
 import './globals.css'
 
@@ -39,7 +39,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={`${text.variable} ${accent.variable} ${title.variable} antialiased`}>
-                <div id="header">
+                <div id="header" className="sticky top-0">
                     <Header />
                 </div>
                 <div id="content">{children}</div>
