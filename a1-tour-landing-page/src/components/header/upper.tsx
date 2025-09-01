@@ -7,10 +7,10 @@ import Link from 'next/link'
 
 export default function Upper() {
     return (
-        <section className="flex flex-row justify-between items-center px-[4.5rem] py-1.5 border-b border-border text-[14px] text-foreground">
+        <section className="border-border text-foreground flex flex-row items-center justify-between border-b px-[4.5rem] py-1.5 text-[14px]">
             <div
                 id="left"
-                className="flex flex-row w-auto h-auto gap-6.5 *:flex *:flex-row *:justify-between *:gap-2"
+                className="flex h-auto w-auto flex-row gap-6.5 *:flex *:flex-row *:justify-between *:gap-2"
             >
                 <span>
                     <Image
@@ -36,15 +36,15 @@ export default function Upper() {
             </div>
             <div
                 id="right"
-                className="flex flex-row w-auto h-auto gap-6.5 *:flex *:flex-row *:justify-between *:gap-2"
+                className="flex h-auto w-auto flex-row gap-6.5 *:flex *:flex-row *:justify-between *:gap-2"
             >
                 <LanguageToggle />
                 <div className="flex-row items-center justify-center gap-6">
-                    <Link href="/faq" className="cursor-pointer hover:text-secondary">
+                    <Link href="/faq" className="hover:text-secondary cursor-pointer">
                         Faq
                     </Link>
                     <Divider orientation="vertical" />
-                    <Link href="/support" className="cursor-pointer hover:text-secondary">
+                    <Link href="/support" className="hover:text-secondary cursor-pointer">
                         Support
                     </Link>
                     <Divider orientation="vertical" />

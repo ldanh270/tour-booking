@@ -8,7 +8,7 @@ export function VerticalMarker({
     return (
         <div className={`${className}`}>
             <div
-                className={`w-0.5 h-7 rounded-sm stroke-2 ${active ? 'bg-primary' : 'bg-background'}`}
+                className={`h-7 w-0.5 rounded-sm stroke-2 ${active ? 'bg-primary' : 'bg-background'}`}
             />
         </div>
     )

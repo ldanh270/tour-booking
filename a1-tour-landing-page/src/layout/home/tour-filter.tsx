@@ -28,19 +28,19 @@ const filters: { label: string; icon: string; options: string[] }[] = [
 
 export default function TourFilter() {
     return (
-        <div className="relative bottom-13 bg-background flex flex-row justify-center items-center px-8 py-6 gap-6 border-2 border-primary rounded-2xl w-fit mx-auto">
+        <div className="bg-background border-primary relative bottom-13 mx-auto flex w-fit flex-row items-center justify-center gap-6 rounded-2xl border-2 px-8 py-6">
             {filters.map((item) => (
                 <TourOption
                     key={item.label}
                     main={item}
                     dropdownOptions={item.options}
-                    className="w-62 relative after:content-[''] after:block after:w-[1px] after:h-10 after:bg-border hover:bg-transparent"
+                    className="after:bg-border relative w-62 after:block after:h-10 after:w-[1px] after:content-[''] hover:bg-transparent"
                 />
             ))}
             <Button
                 variant="default"
                 size="default"
-                className="rounded-full w-40 h-14 text-background"
+                className="text-background h-14 w-40 rounded-full"
             >
                 Search
             </Button>

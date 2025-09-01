@@ -64,9 +64,9 @@ const navPages = [
 
 export default function Lower() {
     return (
-        <section className="flex w-full flex-row justify-start items-center *:h-full">
+        <section className="flex w-full flex-row items-center justify-start *:h-full">
             <Logo />
-            <ul id="navbar" className="flex flex-row list-none w-auto gap-[47px] ">
+            <ul id="navbar" className="flex w-auto list-none flex-row gap-[47px]">
                 {navPages.map((page) => (
                     <li key={page.name} className="w-fit whitespace-nowrap">
                         {page.child ? (
@@ -77,7 +77,7 @@ export default function Lower() {
                             <Button
                                 variant="link"
                                 size="default"
-                                className="size-auto flex flex-row gap-2 font-text font-normal text-foreground text-[14px] m-0 p-0 cursor-pointer hover:text-secondary"
+                                className="font-text text-foreground hover:text-secondary m-0 flex size-auto cursor-pointer flex-row gap-2 p-0 text-[14px] font-normal"
                             >
                                 <Link href={page.href}>{page.name}</Link>
                             </Button>
@@ -85,10 +85,10 @@ export default function Lower() {
                     </li>
                 ))}
             </ul>
-            <div id="request" className="w-full flex flex-row items-center justify-end mx-[72px]">
+            <div id="request" className="mx-[72px] flex w-full flex-row items-center justify-end">
                 <Button
                     variant="secondary"
-                    className="rounded-full bg-primary-foreground cursor-pointer"
+                    className="bg-primary-foreground cursor-pointer rounded-full"
                 >
                     <span className="text-background">Request A Quote</span>
                     <ForwardArrow />

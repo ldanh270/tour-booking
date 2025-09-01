@@ -16,7 +16,7 @@ export default function Divider({
                 alt="Vertical Divider"
                 width={width}
                 height={height}
-                className="w-auto h-auto select-none fill-secondary"
+                className="fill-secondary h-auto w-auto select-none"
             />
         )
     }

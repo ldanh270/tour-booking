@@ -35,7 +35,7 @@ export function NavToggle({
                 <Button
                     variant={variant}
                     size={size}
-                    className={`size-auto flex flex-row gap-2 font-text font-normal text-foreground text-[14px] m-0 p-0 cursor-pointer hover:text-secondary ${className}`}
+                    className={`font-text text-foreground hover:text-secondary m-0 flex size-auto cursor-pointer flex-row gap-2 p-0 text-[14px] font-normal ${className}`}
                     onMouseEnter={() => setOpen(true)}
                     onMouseLeave={() => setOpen(false)}
                 >

@@ -2,9 +2,9 @@ import Image from 'next/image'
 
 export default function Logo() {
     return (
-        <div className="bg-[url('/bg-mask.svg')] bg-cover bg-center w-3xl flex flex-row justify-center items-center py-4.5 px-20">
+        <div className="flex w-3xl flex-row items-center justify-center bg-[url('/bg-mask.svg')] bg-cover bg-center px-20 py-4.5">
             <Image src="logo.svg" alt="Logo" width={95} height={56} />
-            <span className="text-background font-title font-extrabold text-[26px]">Tours</span>
+            <span className="text-background font-title text-[26px] font-extrabold">Tours</span>
         </div>
     )
 }

@@ -20,7 +20,7 @@ export function LanguageToggle() {
                 <Button
                     variant="outline"
                     size="default"
-                    className="w-[100px] h-[34px] flex flex-row justify-center items-center rounded-full font-text font-normal px-3 gap-0 cursor-pointer"
+                    className="font-text flex h-[34px] w-[100px] cursor-pointer flex-row items-center justify-center gap-0 rounded-full px-3 font-normal"
                     onMouseEnter={() => setOpen(true)}
                     onMouseLeave={() => setOpen(false)}
                 >

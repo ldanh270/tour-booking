@@ -35,15 +35,15 @@ export function TourOption({
                 <Button
                     variant="ghost"
                     size="default"
-                    className={`size-auto flex flex-row justify-start items-center gap-2 font-text font-normal text-foreground text-[14px] m-0 p-0 cursor-pointer h-full hover:text-secondary hover:bg-none ${className}`}
+                    className={`font-text text-foreground hover:text-secondary m-0 flex size-auto h-full cursor-pointer flex-row items-center justify-start gap-2 p-0 text-[14px] font-normal hover:bg-none ${className}`}
                 >
-                    <div className="flex flex-row w-full">
+                    <div className="flex w-full flex-row">
                         <Image
                             src={main.icon}
                             alt={`${main.label} filter`}
                             width={20}
                             height={20}
-                            className="fill-background w-5 h-5 mr-2"
+                            className="fill-background mr-2 h-5 w-5"
                         />
                         <span className="text-secondary flex-1 text-left">{main.label}</span>
                     </div>
