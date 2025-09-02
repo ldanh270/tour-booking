@@ -39,10 +39,12 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={`${text.variable} ${accent.variable} ${title.variable} antialiased`}>
-                <div id="header" className="sticky top-0">
+                <div id="header" className="sticky top-0 z-50 **:z-40">
                     <Header />
                 </div>
-                <div id="content">{children}</div>
+                <div id="content" className="z-40 **:z-40">
+                    {children}
+                </div>
             </body>
         </html>
     )
