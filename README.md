@@ -1,63 +1,36 @@
-# Junior Front-end Engineer Assignment - Aug 2025
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-* Copyright (c) River Flow Solutions, Jsc. 2025. All rights reserved.
-* We only use the submissions for candidates evaluation.
+## Getting Started
 
-## Assignment List
+First, run the development server:
 
-- Layout Implementation (CSS, HTML)
-- Multi-Step Form with Live PDF Preview
-- Map & Location List Synchronization
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## General Requirements
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- Use either [ShaDN](https://ui.shadcn.com/), [TailwindCSS](https://tailwindcss.com/) for UI layout
-- Use either of ReactJS, VueJS, Svelte-Kit for the Main Framework.
-- Use either of the following libaries for State Management:
-  - [Redux-toolkit](https://redux-toolkit.js.org/)
-  - [Nanostores](https://github.com/nanostores/nanostores)
-- No limit of using AI / help as long as the candidate can understand and explain the related technical details.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Instructions
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Candidate must fork this repository to a public repo under their name for submission.
+## Learn More
 
-Each candidate must implement at least 2 assignments out of 3 from the list. 
+To learn more about Next.js, take a look at the following resources:
 
-In case of technical difficulties, candidate may describe how the problem should be resolved in NARRATION.md. However, executable code is always preferrable.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Remember reply to email when you complete the assignment.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## A1: Layout Implementation
+## Deploy on Vercel
 
-Implement Figma Screens into HTML and CSS, using frameworks like TailwindCSS, Bootstrap, or custom CSS.
-- Download and import [Design](rfx_figma_recur_aug_2025.fig) to your figma.
-- Use the exact font designed in figma
-- Use the exact colors and spacing designed in figma
-- Pixel perfect implementation
-- Handle interactive states (carousel, hover, etc.)
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## A2: Multi-Step Form with Live PDF Preview
-
-Implement an application that allows user to fill a multi-step form and preview the filled form as a PDF preview.
-- The application must have at least 3 distinct steps, with each step containing its own form.
-- Users can navigate forward and backward, all previously entered data must be preserved when moving between steps.
-- Users can reset the data of the entire form.
-- Can only click the "Continue" button after filling in all the fields in the form.
-- When the user submits (for each step of the form or the entire application), immediately display the data on the PDF preview area.
-- Show progress bar of the whole process.
-- Validate the form data before submitting.
-
-## A3: Map & Location List Synchronization
-
-Use either [Mapbox GL](https://docs.mapbox.com/mapbox-gl-js/), [Leaflet](https://leafletjs.com/) or [Google Maps](https://developers.google.com/maps/documentation) for the map component.
-
-Implement a component that render the [Location List](location.json) as a list of locations with map synchronization.
-- Display the list of locations in a list view and all locations must be marked on the map.
-- Allow user to sort the list of locations by rating.
-- Allow user to search the list of locations by name or address.
-- Allow user to select a location from the list and the map will be synchronized with the selected location (fly to the selected location).
-- Allow user to select map marker and the list will be synchronized with the selected location (scroll to the selected location in the list).
-- Hightlight both the list and the map marker of the selected location.
-- Show a popup/tooltip with location details when clicking the marker.
-- Optimize the locations list for large dataset.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
