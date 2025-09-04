@@ -12,7 +12,7 @@ export default function Divider({
     if (orientation === 'vertical') {
         return (
             <Image
-                src="vertical-divider.svg"
+                src="/header/vertical-divider.svg"
                 alt="Vertical Divider"
                 width={width}
                 height={height}

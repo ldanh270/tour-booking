@@ -3,7 +3,6 @@ import { NavToggle } from '@/components/common/nav-toggle'
 import Logo from '@/components/header/logo'
 import { Button } from '@/components/ui/button'
 
-import Image from 'next/image'
 import Link from 'next/link'
 
 const navPages = [
