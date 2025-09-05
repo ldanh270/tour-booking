@@ -16,8 +16,8 @@ export default function Card({
     return (
         <div
             className={[
-                'bg-card ring-border overflow-hidden rounded-[24px] ring-1',
-                'shadow-sm transition-transform duration-300 ease-out hover:scale-[1.02]',
+                'bg-card ring-border overflow-hidden rounded-3xl ring-1',
+                'shadow-sm transition-transform duration-300 ease-out hover:scale-[1.1]',
                 className,
             ].join(' ')}
         >
@@ -26,7 +26,7 @@ export default function Card({
                 alt={alt}
                 width={width}
                 height={height}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-center"
                 loading="lazy"
                 decoding="async"
             />

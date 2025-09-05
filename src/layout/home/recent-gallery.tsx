@@ -39,65 +39,75 @@ export default function RecentGallery() {
                 </div>
 
                 {/* gallery */}
-                <div className="grid grid-cols-2 gap-4 md:auto-rows-[170px] md:grid-cols-5 md:grid-rows-2 md:gap-6 lg:auto-rows-[210px]">
-                    {/* Left big */}
-                    <Card
-                        src={PICS[0].src}
-                        alt={PICS[0].alt}
-                        width={282}
-                        height={265}
-                        className="col-span-2 aspect-[5/4] md:col-span-1 md:row-span-2 md:aspect-auto md:h-full"
-                    />
+                <div className="grid h-[35rem] grid-cols-5 gap-5">
+                    {/* Left pic */}
+                    <div className="flex flex-col items-center justify-center gap-5">
+                        <Card
+                            src={PICS[0].src}
+                            alt={PICS[0].alt}
+                            width={282}
+                            height={265}
+                            className="h-66"
+                        />
+                    </div>
 
                     {/* left stack */}
-                    <Card
-                        src={PICS[1].src}
-                        alt={PICS[1].alt}
-                        width={282}
-                        height={218}
-                        className="aspect-[4/3] md:aspect-auto md:h-full"
-                    />
-                    <Card
-                        src={PICS[2].src}
-                        alt={PICS[2].alt}
-                        width={282}
-                        height={218}
-                        className="aspect-[4/3] md:aspect-auto md:h-full"
-                    />
+                    <div className="flex flex-col items-center justify-center gap-5">
+                        <Card
+                            src={PICS[1].src}
+                            alt={PICS[1].alt}
+                            width={282}
+                            height={218}
+                            className="h-66"
+                        />
+                        <Card
+                            src={PICS[2].src}
+                            alt={PICS[2].alt}
+                            width={282}
+                            height={218}
+                            className="h-66"
+                        />
+                    </div>
 
                     {/* center tall */}
-                    <Card
-                        src={PICS[3].src}
-                        alt={PICS[3].alt}
-                        width={282}
-                        height={456}
-                        className="col-span-2 aspect-[4/5] md:col-span-1 md:row-span-2 md:aspect-auto md:h-full"
-                    />
+                    <div className="flex flex-col items-center justify-center gap-5">
+                        <Card
+                            src={PICS[3].src}
+                            alt={PICS[3].alt}
+                            width={282}
+                            height={456}
+                            className="h-full"
+                        />
+                    </div>
 
-                    {/* right stack */}
-                    <Card
-                        src={PICS[4].src}
-                        alt={PICS[4].alt}
-                        width={282}
-                        height={218}
-                        className="aspect-[4/3] md:aspect-auto md:h-full"
-                    />
-                    <Card
-                        src={PICS[5].src}
-                        alt={PICS[5].alt}
-                        width={282}
-                        height={218}
-                        className="aspect-[4/3] md:aspect-auto md:h-full"
-                    />
+                    {/* Right stack */}
+                    <div className="flex flex-col items-center justify-center gap-5">
+                        <Card
+                            src={PICS[4].src}
+                            alt={PICS[4].alt}
+                            width={282}
+                            height={218}
+                            className="h-66"
+                        />
+                        <Card
+                            src={PICS[5].src}
+                            alt={PICS[5].alt}
+                            width={282}
+                            height={218}
+                            className="h-66"
+                        />
+                    </div>
 
-                    {/* Right big */}
-                    <Card
-                        src={PICS[6].src}
-                        alt={PICS[6].alt}
-                        width={282}
-                        height={265}
-                        className="col-span-2 aspect-[5/4] md:col-span-1 md:row-span-2 md:aspect-auto md:h-full"
-                    />
+                    {/* Right pic */}
+                    <div className="flex flex-col items-center justify-center gap-5">
+                        <Card
+                            src={PICS[6].src}
+                            alt={PICS[6].alt}
+                            width={282}
+                            height={265}
+                            className="h-66"
+                        />
+                    </div>
                 </div>
             </div>
         </section>
