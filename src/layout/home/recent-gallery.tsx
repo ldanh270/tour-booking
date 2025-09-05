@@ -32,10 +32,12 @@ export default function RecentGallery() {
             <div className="mx-auto max-w-6xl px-4">
                 {/* heading */}
                 <div className="mb-8 text-center">
-                    <p className="font-accent text-secondary text-xl md:text-2xl">
+                    <p className="font-accent text-primary-foreground text-4xl">
                         Make Your Tour More Pleasure
                     </p>
-                    <h2 className="font-title mt-1 text-3xl md:text-4xl">Recent Gallery</h2>
+                    <h2 className="font-title text-primary-foreground text-5xl font-bold">
+                        Recent Gallery
+                    </h2>
                 </div>
 
                 {/* gallery */}
