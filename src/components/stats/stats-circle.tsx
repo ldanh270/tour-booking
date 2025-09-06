@@ -13,18 +13,18 @@ export default function StatsCircle({
 }) {
     let pos = ''
     if (corner === 'tr') {
-        pos = 'top-6 right-6'
+        pos = 'top-8.5 right-8.5'
     } else if (corner === 'tl') {
-        pos = 'top-6 -left-6'
+        pos = 'top-8.5 -left-8.5'
     } else if (corner === 'br') {
-        pos = 'bottom-6 right-6'
+        pos = 'bottom-8.5 right-8.5'
     } else {
-        pos = 'bottom-6 left-6'
+        pos = 'bottom-8.5 left-8.5'
     }
 
     return (
         <div
-            className={`border-primary relative h-64 w-64 rounded-full border transition-transform duration-500 hover:scale-105 ${className}`}
+            className={`border-primary relative h-80 w-80 rounded-full border transition-transform duration-500 hover:scale-105 ${className}`}
         >
             {/* white ring between outer and inner */}
             <div className="pointer-events-none absolute inset-3 rounded-full" />
@@ -32,8 +32,8 @@ export default function StatsCircle({
             {/* inner pale circle */}
             <div className="bg-element absolute inset-8 flex items-center justify-center rounded-full">
                 <div className="text-center">
-                    <div className="text-foreground text-4xl font-bold">{value}</div>
-                    <div className="text-secondary mt-1 text-base">{label}</div>
+                    <div className="text-foreground text-5xl font-bold">{value}</div>
+                    <div className="text-secondary mt-1 text-2xl">{label}</div>
                 </div>
             </div>
 
