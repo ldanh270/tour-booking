@@ -1,19 +1,29 @@
 'use client'
 
-type Stat = { value: string; label: string; corner?: 'tr' | 'tl' | 'br' | 'bl' }
-
-export default function StatsCircle({ value, label, corner = 'tr' }: Stat) {
-    const pos =
-        corner === 'tr'
-            ? 'top-0 -right-1'
-            : corner === 'tl'
-              ? 'top-0 -left-1'
-              : corner === 'br'
-                ? '-bottom-1 -right-1'
-                : '-bottom-1 -left-1'
+export default function StatsCircle({
+    value,
+    label,
+    corner = 'tr',
+    className,
+}: {
+    value: string
+    label: string
+    corner?: 'tr' | 'tl' | 'br' | 'bl'
+    className?: string
+}) {
+    let pos = ''
+    if (corner === 'tr') {
+        pos = 'top-6.5 right-6.5'
+    } else if (corner === 'tl') {
+        pos = 'top-6.5 -left-6.5'
+    } else if (corner === 'br') {
+        pos = 'bottom-6.5 right-6.5'
+    } else {
+        pos = 'bottom-6.5 left-6.5'
+    }
 
     return (
-        <div className="border-primary relative h-64 w-64 rounded-full border">
+        <div className={`border-primary relative h-64 w-64 rounded-full border ${className}`}>
             {/* white ring between outer and inner */}
             <div className="pointer-events-none absolute inset-3 rounded-full ring-8 ring-white/95" />
 

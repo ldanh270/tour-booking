@@ -13,10 +13,14 @@ const STATS: Stat[] = [
 
 export default function Stats() {
     return (
-        <section className="w-full overflow-hidden py-10">
-            <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-14">
-                {STATS.map((s, i) => (
-                    <StatsCircle key={i} {...s} />
+        <section className="w-full overflow-hidden py-10 pb-40 select-none">
+            <div className="mx-auto flex max-w-6xl flex-nowrap items-center justify-center gap-14">
+                {STATS.map((stat, index) => (
+                    <StatsCircle
+                        key={stat.label}
+                        {...stat}
+                        className={!(index % 2) ? 'top-25' : ''}
+                    />
                 ))}
             </div>
         </section>
