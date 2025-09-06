@@ -1,6 +1,5 @@
 'use client'
 
-import Heading from '@/components/common/heading'
 import Card from '@/components/recent-gallery/card'
 
 type Pic = { src: string; alt: string }
@@ -32,7 +31,14 @@ export default function RecentGallery() {
 
             <div className="mx-auto max-w-6xl px-4">
                 {/* heading */}
-                <Heading subtitle="Make Your Tour More Pleasure" title="Recent Gallery" />
+                <div className="mb-8 text-center">
+                    <p className="font-accent text-primary-foreground text-4xl">
+                        Make Your Tour More Pleasure
+                    </p>
+                    <h2 className="font-title text-primary-foreground text-5xl font-bold">
+                        Recent Gallery
+                    </h2>
+                </div>
 
                 {/* gallery */}
                 <div className="grid h-[35rem] grid-cols-5 gap-5">

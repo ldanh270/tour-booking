@@ -1,5 +1,6 @@
-import Heading from '@/components/common/heading'
-import PaginationDots from '@/components/common/pagination_dots'
+'use client'
+
+import { useState } from 'react'
 
 import Image from 'next/image'
 
@@ -43,16 +44,19 @@ const DESTINATIONS: Destination[] = [
 ]
 
 export default function Recommended() {
+    const [active, setActive] = useState(0)
+
     return (
         <section className="w-full bg-[url('/patterns/bg-light.svg')] bg-cover bg-center py-16">
             <div className="mx-auto max-w-6xl px-4 text-center">
-                {/* Heading */}
-                <Heading
-                    subtitle="Best Recommended Places"
-                    title="Popular Destination we offer for all"
-                />
-
-                <p className="text-primary-foreground mx-auto -mt-3 max-w-2xl text-lg">
+                {/* Header */}
+                <p className="font-accent text-primary-foreground text-4xl">
+                    Best Recommended Places
+                </p>
+                <h2 className="font-title text-primary-foreground mt-1 text-5xl font-bold">
+                    Popular Destination we offer for all
+                </h2>
+                <p className="text-primary-foreground mx-auto mt-3 max-w-2xl text-lg">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua.
                 </p>
@@ -132,7 +136,19 @@ export default function Recommended() {
                 </div>
 
                 {/* Pagination dots */}
-                <PaginationDots />
+                <div className="mt-8 flex justify-center gap-3">
+                    {[...Array(6)].map((_, index) => (
+                        <button
+                            key={index}
+                            onClick={() => setActive(index)}
+                            className={`h-4 w-4 cursor-pointer rounded-full border transition-colors ${
+                                active === index
+                                    ? 'bg-primary border-primary'
+                                    : 'border-primary-foreground bg-transparent'
+                            }`}
+                        />
+                    ))}
+                </div>
             </div>
         </section>
     )

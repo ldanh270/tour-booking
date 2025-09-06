@@ -1,7 +1,6 @@
 'use client'
 
 import Card from '@/components/category/card'
-import Heading from '@/components/common/heading'
 
 import { useEffect, useMemo, useRef, useState } from 'react'
 
@@ -45,7 +44,10 @@ const CATEGORIES: CategoryItem[] = [
 export default function Category() {
     return (
         <div className="flex w-full flex-col items-center justify-center">
-            <Heading subtitle="Wornderful Place For You" title="Tour Categories" />
+            <div id="title">
+                <div className="font-accent text-center text-4xl">Wornderful Place For You</div>
+                <div className="font-title text-center text-5xl font-bold">Tour Categories</div>
+            </div>
             <div
                 id="slider"
                 className="mt-25 flex w-full flex-col items-center justify-center self-center"

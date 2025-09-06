@@ -6,7 +6,6 @@ import RecentGallery from '@/layout/home/recent-gallery'
 import Recommended from '@/layout/home/recommended'
 import Stats from '@/layout/home/stats'
 import TourFilter from '@/layout/home/tour-filter'
-import TourGuide from '@/layout/home/tour-guide'
 
 export default function Home() {
     return (
@@ -19,7 +18,6 @@ export default function Home() {
             <Recommended />
             <RecentGallery />
             <Stats />
-            <TourGuide />
         </section>
     )
 }
