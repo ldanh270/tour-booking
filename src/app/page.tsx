@@ -1,3 +1,4 @@
+import Blogs from '@/layout/home/blogs'
 import Category from '@/layout/home/category'
 import Destination from '@/layout/home/destination'
 import Hero from '@/layout/home/hero'
@@ -22,6 +23,7 @@ export default function Home() {
             <Stats />
             <TourGuide />
             <Sponsors />
+            <Blogs />
         </section>
     )
 }
