@@ -1,5 +1,7 @@
 'use client'
 
+import Heading from '@/components/common/heading'
+
 import { useRef, useState } from 'react'
 
 type Destination = { name: string; listing: number; image: string }
@@ -43,10 +45,7 @@ export default function Destination() {
 
     return (
         <section className="w-full py-12">
-            <div className="mb-10 text-center">
-                <p className="font-accent text-primary-foreground text-4xl">Top Destination</p>
-                <h2 className="font-title text-5xl font-bold">Popular Destination</h2>
-            </div>
+            <Heading title="Popular Destination" subtitle="Top Destination" />
 
             <div className="relative mx-auto">
                 <div
