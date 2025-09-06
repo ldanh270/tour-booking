@@ -4,6 +4,7 @@ import Hero from '@/layout/home/hero'
 import PlanYourTrip from '@/layout/home/plan-your-trip'
 import RecentGallery from '@/layout/home/recent-gallery'
 import Recommended from '@/layout/home/recommended'
+import Stats from '@/layout/home/stats'
 import TourFilter from '@/layout/home/tour-filter'
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
             <PlanYourTrip />
             <Recommended />
             <RecentGallery />
+            <Stats />
         </section>
     )
 }
