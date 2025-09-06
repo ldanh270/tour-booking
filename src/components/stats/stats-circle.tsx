@@ -23,7 +23,9 @@ export default function StatsCircle({
     }
 
     return (
-        <div className={`border-primary relative h-64 w-64 rounded-full border ${className}`}>
+        <div
+            className={`border-primary relative h-64 w-64 rounded-full border transition-transform duration-500 hover:scale-105 ${className}`}
+        >
             {/* white ring between outer and inner */}
             <div className="pointer-events-none absolute inset-3 rounded-full ring-8 ring-white/95" />
 
