@@ -38,20 +38,17 @@ export default function TourGuide() {
     return (
         <main className="relative w-full">
             {/* patterned background */}
-            <section className="bg-element w-full bg-[url('/tour-guide/background.svg')] bg-top bg-repeat py-24">
+            <section className="bg-element w-full bg-[url('/tour-guide/background.svg')] bg-top bg-repeat py-20">
                 {/* heading */}
                 <Heading subtitle="Meet with Guide" title="Tour Guide" />
-                <div className="mx-auto max-w-6xl px-4">
-                    {/* cards */}
-                    <div className="mt-16 grid grid-cols-1 place-items-center gap-10 sm:grid-cols-2 lg:grid-cols-4">
-                        {GUIDES.map((guide) => (
-                            <GuideCard key={guide.name} {...guide} />
-                        ))}
-                    </div>
-
-                    {/* pagination dots */}
-                    <PaginationDots />
+                {/* Cards */}
+                <div className="flex flex-row items-center justify-center gap-6 pt-20">
+                    {GUIDES.map((guide) => (
+                        <GuideCard key={guide.name} {...guide} />
+                    ))}
                 </div>
+                {/* Pagination dots */}
+                <PaginationDots />
             </section>
         </main>
     )
