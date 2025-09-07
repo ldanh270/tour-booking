@@ -22,16 +22,6 @@ const FEATURES: Feature[] = [
 export default function PlanYourTrip() {
     return (
         <section className="relative w-full">
-            {/* Balloons decors */}
-            <div aria-hidden="true">
-                <div className="pointer-events-none absolute top-40 left-15 hidden h-8 w-8 md:block">
-                    <Balloon />
-                </div>
-                <div className="pointer-events-none absolute top-52 left-1 hidden h-12 w-12 md:block">
-                    <Balloon />
-                </div>
-            </div>
-
             {/* Contents */}
             <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-4 py-16 md:grid-cols-12 md:gap-8 lg:py-20">
                 {/* Left gallery */}
