@@ -1,3 +1,4 @@
+import Footer from '@/layout/core/footer'
 import Header from '@/layout/core/header'
 
 import type { Metadata } from 'next'
@@ -44,6 +45,9 @@ export default function RootLayout({
                 </div>
                 <div id="content" className="z-0 **:z-0">
                     {children}
+                </div>
+                <div id="footer">
+                    <Footer />
                 </div>
             </body>
         </html>
