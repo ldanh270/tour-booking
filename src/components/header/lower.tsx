@@ -87,7 +87,7 @@ export default function Lower() {
             <div id="request" className="mx-[72px] flex w-full flex-row items-center justify-end">
                 <Button
                     variant="secondary"
-                    className="bg-primary-foreground cursor-pointer rounded-full"
+                    className="bg-primary-foreground cursor-pointer rounded-full hover:bg-slate-800"
                 >
                     <span className="text-background">Request A Quote</span>
                     <ForwardArrow />
