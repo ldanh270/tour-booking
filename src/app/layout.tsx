@@ -1,5 +1,6 @@
 import Footer from '@/layout/core/footer'
 import Header from '@/layout/core/header'
+import DecorIcons from '@/layout/home/decor-icons'
 
 import type { Metadata } from 'next'
 import { Inter, Manrope, Montez } from 'next/font/google'
@@ -40,6 +41,10 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={`${text.variable} ${accent.variable} ${title.variable} antialiased`}>
+                <div className="relative z-50">
+                    <DecorIcons />
+                </div>
+
                 <div id="header" className="sticky top-0 z-50 **:z-50">
                     <Header />
                 </div>
